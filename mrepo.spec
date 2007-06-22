@@ -1,25 +1,19 @@
-# $Id: mrepo.spec 4993 2006-12-13 00:55:55Z dag $
-# Authority: dag
+# $Id$
 # Upstream: Dag Wieers <dag$wieers,com>
 
 Summary: Tool to set up a Yum/Apt mirror from various sources (ISO, RHN, rsync, http, ftp, ...)
 Name: mrepo
 Version: 0.8.4
-Release: 1.rf
+Packager: Bruno Cornec <bcornec@mandriva.org>
+Release: %mkrel 1
 License: GPL
-Group: System Environment/Base
+Group: System/Configuration/Packaging
 URL: http://dag.wieers.com/home-made/mrepo/
-
-Packager: Dag Wieers <dag@wieers.com>
-Vendor: Dag Apt Repository, http://dag.wieers.com/apt/
-
 Source: http://dag.wieers.com/home-made/mrepo/mrepo-%{version}.tar.bz2
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(id -u -n)
 
 BuildArch: noarch
-BuildRequires: /usr/bin/python2
 Requires: python >= 2.0, createrepo
-Obsoletes: yam <= %{version}
 
 %description
 mrepo builds a local Apt/Yum RPM repository from local ISO files,
@@ -78,7 +72,7 @@ EOF
 
 %preun
 if [ $1 -eq 0 ]; then
-	/service mrepo stop &>/dev/null || :
+	/etc/init.d/mrepo stop &>/dev/null || :
 	/sbin/chkconfig --del mrepo
 fi
 
@@ -104,6 +98,9 @@ fi
 %{_bindir}/rhnget
 %{_bindir}/mrepo
 %{_datadir}/mrepo/
-%{_localstatedir}/cache/mrepo/
-%{_localstatedir}/www/mrepo/
-%{_localstatedir}/mrepo/
+#%{_localstatedir}/cache/mrepo/
+#%{_localstatedir}/www/mrepo/
+#%{_localstatedir}/mrepo/
+/var/cache/mrepo/
+/var/www/mrepo/
+/var/mrepo/
