@@ -10,6 +10,7 @@ License: GPL
 Group: System/Configuration/Packaging
 URL: http://dag.wieers.com/home-made/mrepo/
 Source: http://dag.wieers.com/home-made/mrepo/mrepo-%{version}.tar.bz2
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(id -u -n)
 
 BuildArch: noarch
 Requires: python >= 2.0, createrepo
