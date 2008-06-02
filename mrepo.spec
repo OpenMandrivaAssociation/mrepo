@@ -98,9 +98,9 @@ fi
 %{_bindir}/rhnget
 %{_bindir}/mrepo
 %{_datadir}/mrepo/
-#%{_localstatedir}/cache/mrepo/
-#%{_localstatedir}/www/mrepo/
-#%{_localstatedir}/mrepo/
+#%{_localstatedir}/lib/cache/mrepo/
+#%{_localstatedir}/lib/www/mrepo/
+#%{_localstatedir}/lib/mrepo/
 /var/cache/mrepo/
 /var/www/mrepo/
 /var/mrepo/
