@@ -1,7 +1,7 @@
 # $Id$
 # Upstream: Dag Wieers <dag$wieers,com>
 
-Summary: Tool to set up a Yum/Apt mirror from various sources (ISO, RHN, rsync, http, ftp, ...)
+Summary: Tool to set up a Yum/Apt mirror from various sources
 Name: mrepo
 Version: 0.8.6
 Packager: Bruno Cornec <bcornec@mandriva.org>
@@ -16,6 +16,8 @@ BuildArch: noarch
 Requires: python >= 2.0, createrepo
 
 %description
+Tool to set up a Yum/Apt mirror from various sources (ISO, RHN, rsync, http, ftp, ...).
+
 mrepo builds a local Apt/Yum RPM repository from local ISO files,
 downloaded updates and extra packages from RHN and 3rd party
 repositories.
