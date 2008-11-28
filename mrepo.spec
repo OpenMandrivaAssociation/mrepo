@@ -16,7 +16,8 @@ BuildArch: noarch
 Requires: python >= 2.0, createrepo
 
 %description
-Tool to set up a Yum/Apt mirror from various sources (ISO, RHN, rsync, http, ftp, ...).
+Tool to set up a Yum/Apt mirror from various sources 
+(ISO, RHN, rsync, http, ftp, ...).
 
 mrepo builds a local Apt/Yum RPM repository from local ISO files,
 downloaded updates and extra packages from RHN and 3rd party
