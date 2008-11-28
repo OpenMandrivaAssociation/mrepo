@@ -3,9 +3,9 @@
 
 Summary: Tool to set up a Yum/Apt mirror from various sources (ISO, RHN, rsync, http, ftp, ...)
 Name: mrepo
-Version: 0.8.4
+Version: 0.8.6
 Packager: Bruno Cornec <bcornec@mandriva.org>
-Release: %mkrel 3
+Release: %mkrel 1
 License: GPL
 Group: System/Configuration/Packaging
 URL: http://dag.wieers.com/home-made/mrepo/
@@ -51,7 +51,7 @@ EOF
 srcdir = /var/mrepo
 wwwdir = /var/www/mrepo
 confdir = /etc/mrepo.conf.d
-arch = i386
+arch = i386 x86_64
 
 mailto = root@localhost
 smtp-server = localhost
