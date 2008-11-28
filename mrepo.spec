@@ -97,6 +97,7 @@ fi
 %{_bindir}/gensystemid
 %{_bindir}/rhnget
 %{_bindir}/mrepo
+%{_bindir}/youget
 %{_datadir}/mrepo/
 #%{_localstatedir}/lib/cache/mrepo/
 #%{_localstatedir}/lib/www/mrepo/
