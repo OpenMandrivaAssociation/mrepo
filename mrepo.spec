@@ -5,7 +5,7 @@ Summary: Tool to set up a Yum/Apt mirror from various sources
 Name: mrepo
 Version: 0.8.6
 Packager: Bruno Cornec <bcornec@mandriva.org>
-Release: %mkrel 2
+Release: %mkrel 3
 License: GPL
 Group: System/Configuration/Packaging
 URL: http://dag.wieers.com/home-made/mrepo/
