@@ -108,3 +108,89 @@ fi
 /var/cache/mrepo/
 /var/www/mrepo/
 /var/mrepo/
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 0.8.6-3mdv2011.0
++ Revision: 620409
+- the mass rebuild of 2010.0 packages
+
+* Mon Sep 14 2009 Thierry Vignaud <tv@mandriva.org> 0.8.6-2mdv2010.0
++ Revision: 440152
+- rebuild
+
+* Fri Nov 28 2008 Bruno Cornec <bcornec@mandriva.org> 0.8.6-1mdv2009.1
++ Revision: 307416
+- Fix another rpmlint error
+- Fix rpmlint warnings
+- youget is now part of files installed
+- Add mrepo 0.8.6 sources
+- Update to mrepo 0.8.6
+
+* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.8.4-3mdv2009.0
++ Revision: 241049
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Pixel <pixel@mandriva.com>
+    - adapt to %%_localstatedir now being /var instead of /var/lib (#22312)
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Fri Jun 22 2007 Bruno Cornec <bcornec@mandriva.org> 0.8.4-1mdv2008.0
++ Revision: 43073
+- Update from original DAG spec file to mandriva specificities
+- Import mrepo
+
+
+
+* Wed Dec 13 2006 Dag Wieers <dag@wieers.com> - 0.8.4-1 - +/
+- Updated to release 0.8.4.
+- Package renamed from yam to mrepo.
+
+* Sat Oct 21 2006 Dag Wieers <dag@wieers.com> - 0.8.3-2
+- Get rid of specific createrepo version now that Yam works with upstream.
+
+* Sun Oct 15 2006 Dag Wieers <dag@wieers.com> - 0.8.3-1
+- Updated to release 0.8.3.
+
+* Wed Sep 20 2006 Dag Wieers <dag@wieers.com> - 0.8.2-1
+- Updated to release 0.8.2.
+
+* Fri Mar 10 2006 Dag Wieers <dag@wieers.com> - 0.8.0-2
+- Added gensystemid to installation. (Ian Forde)
+
+* Thu Mar 09 2006 Dag Wieers <dag@wieers.com> - 0.8.0-1
+- Updated to release 0.8.0.
+
+* Fri Mar 25 2005 Dag Wieers <dag@wieers.com> - 0.7.3-1
+- Updated to release 0.7.3.
+
+* Fri Jan 07 2005 Dag Wieers <dag@wieers.com> - 0.7.2-2
+- Add %%post and %%postun scripts. (Bert de Bruijn)
+
+* Fri Dec 31 2004 Dag Wieers <dag@wieers.com> - 0.7.2-1
+- Updated to release 0.7.2.
+
+* Sun Nov 07 2004 Dag Wieers <dag@wieers.com> - 0.7.1-1
+- Updated to release 0.7.1.
+
+* Sun Oct 10 2004 Dag Wieers <dag@wieers.com> - 0.7-1
+- Updated to release 0.7.
+
+* Fri Aug 27 2004 Dag Wieers <dag@wieers.com> - 0.6.1-1
+- Updated to release 0.6.1.
+
+* Wed Aug 25 2004 Dag Wieers <dag@wieers.com> - 0.6-2
+- Updated to release 0.6.
+- Fix a version problem.
+
+* Thu Aug 19 2004 Dag Wieers <dag@wieers.com> - 0.5-1
+- Updated to release 0.5.
+
+* Wed May 19 2004 Dag Wieers <dag@wieers.com> - 0.3-1
+- Updated to release 0.3.
+
+* Fri May 14 2004 Dag Wieers <dag@wieers.com> - 0.2-1
+- Initial package. (using DAR)
