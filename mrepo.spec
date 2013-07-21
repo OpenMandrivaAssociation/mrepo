@@ -3,14 +3,13 @@
 
 Summary: Tool to set up a Yum/Apt mirror from various sources
 Name: mrepo
-Version: 0.8.6
+Version: 0.8.7
 Packager: Bruno Cornec <bcornec@mandriva.org>
-Release: %mkrel 3
+Release: 1
 License: GPL
 Group: System/Configuration/Packaging
 URL: http://dag.wieers.com/home-made/mrepo/
-Source: http://dag.wieers.com/home-made/mrepo/mrepo-%{version}.tar.bz2
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(id -u -n)
+Source: http://dag.wieers.com/home-made/mrepo/%{name}-%{version}.tar.bz2
 
 BuildArch: noarch
 Requires: python >= 2.0, createrepo
@@ -194,3 +193,4 @@ fi
 
 * Fri May 14 2004 Dag Wieers <dag@wieers.com> - 0.2-1
 - Initial package. (using DAR)
+
