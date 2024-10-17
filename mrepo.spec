@@ -8,7 +8,7 @@ Packager: Bruno Cornec <bcornec@mandriva.org>
 Release: 2
 License: GPL
 Group: System/Configuration/Packaging
-URL: http://dag.wieers.com/home-made/mrepo/
+URL: https://dag.wieers.com/home-made/mrepo/
 Source: http://dag.wieers.com/home-made/mrepo/%{name}-%{version}.tar.bz2
 
 BuildArch: noarch
