@@ -84,9 +84,6 @@ fi
 #%postun
 #/sbin/service mrepo condrestart &>/dev/null || :
 
-%clean
-%{__rm} -rf %{buildroot}
-
 %files
 %defattr(-, root, root, 0755)
 %doc AUTHORS ChangeLog COPYING README THANKS TODO WISHLIST config/*.conf config/dists/ docs/
